@@ -1,0 +1,806 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "" [ref=e48] [cursor=pointer]
+      - text:                                        + No items                         ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☐ ☰ ☐ ☰ ☐ ☰                                  + No items      ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰                  +     No items   X     *    *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *                                              *     *              *     *     *     *     *     *     *     
+    - generic [ref=e9]:
+      - button "" [ref=e49] [cursor=pointer]
+      - text:                                                                       
+    - generic [ref=e12]:
+      - button "" [ref=e50] [cursor=pointer]
+      - text:                                               
+    - generic [ref=e15]:
+      - button "" [ref=e51] [cursor=pointer]
+      - generic [ref=e246]:
+        - text: 
+        - generic [ref=e247]:
+          - generic "锁定 = 世界编辑器将保持打开状态" [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: 
+              - text: 
+          - heading "世界书 " [level=3] [ref=e251]:
+            - text: 世界书
+            - link "" [ref=e252] [cursor=pointer]:
+              - /url: https://docs.sillytavern.app/usage/core-concepts/worldinfo/
+              - generic [ref=e253]: 
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - generic [ref=e258]: 已启用的世界书（全局有效）
+              - generic [ref=e259]:
+                - listbox [ref=e260]:
+                  - option [ref=e261]: 👹👹魅魔母女
+                  - option [ref=e262]: 艾瑟兰大陆：异世界大冒险_fixed
+                  - option [ref=e263]: 艾瑟兰大陆：异世界大冒险
+                  - option [ref=e264]: 古宅
+                  - option [ref=e265]: 壶
+                  - option [ref=e266]: 极寒末日发行v1
+                  - option [ref=e267]: 末日地下安全屋发行v1
+                  - option [ref=e268]: 丧尸末日生存系统发行v1
+                  - option [ref=e269]: 尸变纪元 v0.4
+                  - option [ref=e270]: 又纯又绿的穿越之旅
+                  - option [ref=e271]: 最终幻想7回响's Lorebook
+                  - option [ref=e272]: DS 欲望风俗店
+                  - option [ref=e273]: Eldoria
+                  - option [ref=e274]: main_sex-acts-1cf90ff2_sillytavern
+                  - option [ref=e275]: the new city
+                  - option [ref=e276]: Y魔大陆V0.7_Worldbooks
+                - combobox [ref=e279]:
+                  - list
+                  - searchbox "Search" [ref=e281]
+            - generic [ref=e282]:
+              - generic [ref=e283]: 全局世界书激活设置
+              - generic [ref=e284]:
+                - generic [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286]: 单击展开
+                  - button "" [ref=e287]
+                - text:    
+          - generic [ref=e288]:
+            - separator [ref=e289]
+            - generic [ref=e290]:
+              - button " 最新" [ref=e291] [cursor=pointer]:
+                - generic [ref=e292]: 
+                - generic [ref=e293]: 最新
+              - generic [ref=e294]: 或
+              - combobox [ref=e295]
+              - combobox "艾瑟兰大陆：异世界大冒险_fixed" [ref=e825] [cursor=pointer]:
+                - button "Remove all items" [ref=e826]:
+                  - generic [ref=e827]: ×
+                - textbox "艾瑟兰大陆：异世界大冒险_fixed" [ref=e828]
+              - button "" [ref=e302] [cursor=pointer]
+              - button "" [ref=e303] [cursor=pointer]
+              - button "" [ref=e304] [cursor=pointer]
+              - button "" [ref=e305] [cursor=pointer]
+              - button "" [ref=e306] [cursor=pointer]
+            - generic [ref=e307]:
+              - button "+" [active] [ref=e308] [cursor=pointer]
+              - button "" [ref=e309] [cursor=pointer]
+              - button "" [ref=e310] [cursor=pointer]
+              - button "" [ref=e311] [cursor=pointer]
+              - button "" [ref=e312] [cursor=pointer]
+              - searchbox "搜索..." [ref=e313]
+              - combobox [ref=e314]:
+                - option "优先级" [selected]
+                - option "自定义"
+                - option "标题 A 到 Z"
+                - option "标题 Z 到 A"
+                - option "Token ↗"
+                - option "Token ↘"
+                - option "深度 ↗"
+                - option "深度 ↘"
+                - option "顺序 ↗"
+                - option "顺序 ↘"
+                - option "UID ↗"
+                - option "UID ↘"
+                - option "触发频率% ↗"
+                - option "触发频率% ↘"
+              - button "" [ref=e315] [cursor=pointer]
+              - generic [ref=e1310]:
+                - generic [ref=e1311]: 1-21 .. 21
+                - list [ref=e1313]:
+                  - listitem [ref=e1314]:
+                    - button "«" [ref=e1315]
+                  - listitem [ref=e1316]:
+                    - button "<" [ref=e1317]
+                  - listitem [ref=e1318]:
+                    - button ">" [ref=e1319]
+                  - listitem [ref=e1320]:
+                    - button "»" [ref=e1321]
+                - combobox [ref=e1323]:
+                  - option "10 / page"
+                  - option "25 / page" [selected]
+                  - option "50 / page"
+                  - option "100 / page"
+                  - option "500 / page"
+                  - option "1000 / page"
+            - generic [ref=e331]:
+              - generic [ref=e1324]:
+                - generic [ref=e1325]: 标题（备忘）
+                - generic [ref=e1326]: 触发策略
+                - generic [ref=e1327]: 插入位置
+                - generic [ref=e1328]: 深度
+                - generic [ref=e1329]: 顺序
+                - generic [ref=e1330]: 触发概率 %
+              - generic [ref=e1334]:
+                - generic [ref=e1335]:
+                  - button "" [ref=e1336] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1337] [cursor=pointer]: 
+                  - generic [ref=e1338]:
+                    - generic [ref=e1339]:
+                      - textbox "条目标题/备忘录" [ref=e1341]: 全大陆区域索引
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1342]:
+                        - option "🔵" [selected]
+                        - option "🟢"
+                        - option "🔗"
+                    - generic [ref=e1343]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1345]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1348]: "45"
+                      - spinbutton "概率" [ref=e1350]: "100"
+                - button "" [ref=e1351] [cursor=pointer]
+                - button "" [ref=e1352] [cursor=pointer]
+                - button "" [ref=e1353] [cursor=pointer]
+              - generic [ref=e1357]:
+                - generic [ref=e1358]:
+                  - button "" [ref=e1359] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1360] [cursor=pointer]: 
+                  - generic [ref=e1361]:
+                    - generic [ref=e1362]:
+                      - textbox "条目标题/备忘录" [ref=e1364]: 大陆势力概览
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1365]:
+                        - option "🔵" [selected]
+                        - option "🟢"
+                        - option "🔗"
+                    - generic [ref=e1366]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1368]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1371]: "40"
+                      - spinbutton "概率" [ref=e1373]: "100"
+                - button "" [ref=e1374] [cursor=pointer]
+                - button "" [ref=e1375] [cursor=pointer]
+                - button "" [ref=e1376] [cursor=pointer]
+              - generic [ref=e1380]:
+                - generic [ref=e1381]:
+                  - button "" [ref=e1382] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1383] [cursor=pointer]: 
+                  - generic [ref=e1384]:
+                    - generic [ref=e1385]:
+                      - textbox "条目标题/备忘录" [ref=e1387]: 天赋设定
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1388]:
+                        - option "🔵" [selected]
+                        - option "🟢"
+                        - option "🔗"
+                    - generic [ref=e1389]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1391]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1394]: "38"
+                      - spinbutton "概率" [ref=e1396]: "100"
+                - button "" [ref=e1397] [cursor=pointer]
+                - button "" [ref=e1398] [cursor=pointer]
+                - button "" [ref=e1399] [cursor=pointer]
+              - generic [ref=e1403]:
+                - generic [ref=e1404]:
+                  - button "" [ref=e1405] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1406] [cursor=pointer]: 
+                  - generic [ref=e1407]:
+                    - generic [ref=e1408]:
+                      - textbox "条目标题/备忘录" [ref=e1410]: 魔法系统总纲
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1411]:
+                        - option "🔵" [selected]
+                        - option "🟢"
+                        - option "🔗"
+                    - generic [ref=e1412]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1414]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1417]: "37"
+                      - spinbutton "概率" [ref=e1419]: "100"
+                - button "" [ref=e1420] [cursor=pointer]
+                - button "" [ref=e1421] [cursor=pointer]
+                - button "" [ref=e1422] [cursor=pointer]
+              - generic [ref=e1426]:
+                - generic [ref=e1427]:
+                  - button "" [ref=e1428] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1429] [cursor=pointer]: 
+                  - generic [ref=e1430]:
+                    - generic [ref=e1431]:
+                      - textbox "条目标题/备忘录" [ref=e1433]
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1434]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1435]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1437]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1440]: "100"
+                      - spinbutton "概率" [ref=e1442]: "100"
+                - button "" [ref=e1443] [cursor=pointer]
+                - button "" [ref=e1444] [cursor=pointer]
+                - button "" [ref=e1445] [cursor=pointer]
+              - generic [ref=e1449]:
+                - generic [ref=e1450]:
+                  - button "" [ref=e1451] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1452] [cursor=pointer]: 
+                  - generic [ref=e1453]:
+                    - generic [ref=e1454]:
+                      - textbox "条目标题/备忘录" [ref=e1456]: 霜脊山脉 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1457]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1458]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1460]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1463]: "80"
+                      - spinbutton "概率" [ref=e1465]: "100"
+                - button "" [ref=e1466] [cursor=pointer]
+                - button "" [ref=e1467] [cursor=pointer]
+                - button "" [ref=e1468] [cursor=pointer]
+              - generic [ref=e1472]:
+                - generic [ref=e1473]:
+                  - button "" [ref=e1474] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1475] [cursor=pointer]: 
+                  - generic [ref=e1476]:
+                    - generic [ref=e1477]:
+                      - textbox "条目标题/备忘录" [ref=e1479]: 苍翠林海 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1480]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1481]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1483]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1486]: "79"
+                      - spinbutton "概率" [ref=e1488]: "100"
+                - button "" [ref=e1489] [cursor=pointer]
+                - button "" [ref=e1490] [cursor=pointer]
+                - button "" [ref=e1491] [cursor=pointer]
+              - generic [ref=e1495]:
+                - generic [ref=e1496]:
+                  - button "" [ref=e1497] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1498] [cursor=pointer]: 
+                  - generic [ref=e1499]:
+                    - generic [ref=e1500]:
+                      - textbox "条目标题/备忘录" [ref=e1502]: 金色平原 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1503]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1504]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1506]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1509]: "78"
+                      - spinbutton "概率" [ref=e1511]: "100"
+                - button "" [ref=e1512] [cursor=pointer]
+                - button "" [ref=e1513] [cursor=pointer]
+                - button "" [ref=e1514] [cursor=pointer]
+              - generic [ref=e1518]:
+                - generic [ref=e1519]:
+                  - button "" [ref=e1520] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1521] [cursor=pointer]: 
+                  - generic [ref=e1522]:
+                    - generic [ref=e1523]:
+                      - textbox "条目标题/备忘录" [ref=e1525]: 红土荒原 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1526]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1527]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1529]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1532]: "77"
+                      - spinbutton "概率" [ref=e1534]: "100"
+                - button "" [ref=e1535] [cursor=pointer]
+                - button "" [ref=e1536] [cursor=pointer]
+                - button "" [ref=e1537] [cursor=pointer]
+              - generic [ref=e1541]:
+                - generic [ref=e1542]:
+                  - button "" [ref=e1543] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1544] [cursor=pointer]: 
+                  - generic [ref=e1545]:
+                    - generic [ref=e1546]:
+                      - textbox "条目标题/备忘录" [ref=e1548]: 烬灰群岛 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1549]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1550]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1552]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1555]: "76"
+                      - spinbutton "概率" [ref=e1557]: "100"
+                - button "" [ref=e1558] [cursor=pointer]
+                - button "" [ref=e1559] [cursor=pointer]
+                - button "" [ref=e1560] [cursor=pointer]
+              - generic [ref=e1564]:
+                - generic [ref=e1565]:
+                  - button "" [ref=e1566] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1567] [cursor=pointer]: 
+                  - generic [ref=e1568]:
+                    - generic [ref=e1569]:
+                      - textbox "条目标题/备忘录" [ref=e1571]: 矮人派系 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1572]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1573]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1575]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1578]: "75"
+                      - spinbutton "概率" [ref=e1580]: "100"
+                - button "" [ref=e1581] [cursor=pointer]
+                - button "" [ref=e1582] [cursor=pointer]
+                - button "" [ref=e1583] [cursor=pointer]
+              - generic [ref=e1587]:
+                - generic [ref=e1588]:
+                  - button "" [ref=e1589] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1590] [cursor=pointer]: 
+                  - generic [ref=e1591]:
+                    - generic [ref=e1592]:
+                      - textbox "条目标题/备忘录" [ref=e1594]: 精灵派系 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1595]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1596]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1598]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1601]: "74"
+                      - spinbutton "概率" [ref=e1603]: "100"
+                - button "" [ref=e1604] [cursor=pointer]
+                - button "" [ref=e1605] [cursor=pointer]
+                - button "" [ref=e1606] [cursor=pointer]
+              - generic [ref=e1610]:
+                - generic [ref=e1611]:
+                  - button "" [ref=e1612] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1613] [cursor=pointer]: 
+                  - generic [ref=e1614]:
+                    - generic [ref=e1615]:
+                      - textbox "条目标题/备忘录" [ref=e1617]: 兽人派系 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1618]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1619]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1621]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1624]: "73"
+                      - spinbutton "概率" [ref=e1626]: "100"
+                - button "" [ref=e1627] [cursor=pointer]
+                - button "" [ref=e1628] [cursor=pointer]
+                - button "" [ref=e1629] [cursor=pointer]
+              - generic [ref=e1633]:
+                - generic [ref=e1634]:
+                  - button "" [ref=e1635] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1636] [cursor=pointer]: 
+                  - generic [ref=e1637]:
+                    - generic [ref=e1638]:
+                      - textbox "条目标题/备忘录" [ref=e1640]: 人类派系 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1641]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1642]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1644]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1647]: "72"
+                      - spinbutton "概率" [ref=e1649]: "100"
+                - button "" [ref=e1650] [cursor=pointer]
+                - button "" [ref=e1651] [cursor=pointer]
+                - button "" [ref=e1652] [cursor=pointer]
+              - generic [ref=e1656]:
+                - generic [ref=e1657]:
+                  - button "" [ref=e1658] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1659] [cursor=pointer]: 
+                  - generic [ref=e1660]:
+                    - generic [ref=e1661]:
+                      - textbox "条目标题/备忘录" [ref=e1663]: 狼人派系 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1664]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1665]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1667]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1670]: "71"
+                      - spinbutton "概率" [ref=e1672]: "100"
+                - button "" [ref=e1673] [cursor=pointer]
+                - button "" [ref=e1674] [cursor=pointer]
+                - button "" [ref=e1675] [cursor=pointer]
+              - generic [ref=e1679]:
+                - generic [ref=e1680]:
+                  - button "" [ref=e1681] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1682] [cursor=pointer]: 
+                  - generic [ref=e1683]:
+                    - generic [ref=e1684]:
+                      - textbox "条目标题/备忘录" [ref=e1686]: 次要种族 · 世界书条目
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1687]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1688]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1690]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1693]: "70"
+                      - spinbutton "概率" [ref=e1695]: "100"
+                - button "" [ref=e1696] [cursor=pointer]
+                - button "" [ref=e1697] [cursor=pointer]
+                - button "" [ref=e1698] [cursor=pointer]
+              - generic [ref=e1702]:
+                - generic [ref=e1703]:
+                  - button "" [ref=e1704] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1705] [cursor=pointer]: 
+                  - generic [ref=e1706]:
+                    - generic [ref=e1707]:
+                      - textbox "条目标题/备忘录" [ref=e1709]: 光系魔法
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1710]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1711]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1713]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1716]: "36"
+                      - spinbutton "概率" [ref=e1718]: "100"
+                - button "" [ref=e1719] [cursor=pointer]
+                - button "" [ref=e1720] [cursor=pointer]
+                - button "" [ref=e1721] [cursor=pointer]
+              - generic [ref=e1725]:
+                - generic [ref=e1726]:
+                  - button "" [ref=e1727] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1728] [cursor=pointer]: 
+                  - generic [ref=e1729]:
+                    - generic [ref=e1730]:
+                      - textbox "条目标题/备忘录" [ref=e1732]: 暗系魔法
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1733]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1734]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1736]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1739]: "35"
+                      - spinbutton "概率" [ref=e1741]: "100"
+                - button "" [ref=e1742] [cursor=pointer]
+                - button "" [ref=e1743] [cursor=pointer]
+                - button "" [ref=e1744] [cursor=pointer]
+              - generic [ref=e1748]:
+                - generic [ref=e1749]:
+                  - button "" [ref=e1750] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1751] [cursor=pointer]: 
+                  - generic [ref=e1752]:
+                    - generic [ref=e1753]:
+                      - textbox "条目标题/备忘录" [ref=e1755]: 水系魔法
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1756]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1757]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1759]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1762]: "34"
+                      - spinbutton "概率" [ref=e1764]: "100"
+                - button "" [ref=e1765] [cursor=pointer]
+                - button "" [ref=e1766] [cursor=pointer]
+                - button "" [ref=e1767] [cursor=pointer]
+              - generic [ref=e1771]:
+                - generic [ref=e1772]:
+                  - button "" [ref=e1773] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1774] [cursor=pointer]: 
+                  - generic [ref=e1775]:
+                    - generic [ref=e1776]:
+                      - textbox "条目标题/备忘录" [ref=e1778]: 火系魔法
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1779]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1780]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1782]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1785]: "33"
+                      - spinbutton "概率" [ref=e1787]: "100"
+                - button "" [ref=e1788] [cursor=pointer]
+                - button "" [ref=e1789] [cursor=pointer]
+                - button "" [ref=e1790] [cursor=pointer]
+              - generic [ref=e1794]:
+                - generic [ref=e1795]:
+                  - button "" [ref=e1796] [cursor=pointer]
+                  - generic "切换条目激活状态。" [ref=e1797] [cursor=pointer]: 
+                  - generic [ref=e1798]:
+                    - generic [ref=e1799]:
+                      - textbox "条目标题/备忘录" [ref=e1801]: 风系魔法
+                      - combobox "世界书条目状态： 🔵 永久 🟢 关键词 🔗 向量化" [ref=e1802]:
+                        - option "🔵"
+                        - option "🟢" [selected]
+                        - option "🔗"
+                    - generic [ref=e1803]:
+                      - combobox "↑Char：在角色定义之前 ↓Char：在角色定义之后 ↑AN：在作者注释之前 ↓AN：在作者注释之后 @D：在指定深度D" [ref=e1805]:
+                        - option "角色定义前（↑Char）" [selected]
+                        - option "角色定义后（↓Char）"
+                        - option "示例消息前（↑EM）"
+                        - option "示例消息后（↓EM）"
+                        - option "作者注释前（↑AN）"
+                        - option "作者注释后（↓AN）"
+                        - option "[系统⚙] 插入深度 @D"
+                        - option "[用户👤] 插入深度 @D"
+                        - option "[AI🤖] 插入深度 @D"
+                        - option "➡️ 锚点"
+                      - spinbutton "顺序" [ref=e1808]: "32"
+                      - spinbutton "概率" [ref=e1810]: "100"
+                - button "" [ref=e1811] [cursor=pointer]
+                - button "" [ref=e1812] [cursor=pointer]
+                - button "" [ref=e1813] [cursor=pointer]
+    - generic [ref=e18]:
+      - button "" [ref=e52] [cursor=pointer]
+      - text:                                   
+    - generic [ref=e21]:
+      - generic "更改背景图片" [ref=e53]:
+        - button "" [ref=e54] [cursor=pointer]
+      - text:       +                            
+    - generic [ref=e24]:
+      - button "" [ref=e55] [cursor=pointer]
+      - text:         +               +                                                                                                                     +   + +  +     +        +        +        +                                      没有找到脚本                                                                                                        没有找到脚本     
+    - generic [ref=e27]:
+      - button "" [ref=e56] [cursor=pointer]
+      - text:                    
+    - generic [ref=e30]:
+      - button "" [ref=e57] [cursor=pointer]
+      - text:                                                     群聊暂无成员。          无可用角色                                
+  - generic:                      +                                                                                +    + +                  
+  - generic:                  
+  - generic [ref=e33]:
+    - text: 
+    - generic [ref=e34]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - img "SillyTavern 徽标" [ref=e60]
+          - generic [ref=e61]: SillyTavern 1.17.0
+          - button "" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+          - text: 
+        - generic [ref=e65]:
+          - button " 文档" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: 
+            - generic [ref=e68]: 文档
+          - button " GitHub" [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - generic [ref=e71]: GitHub
+          - button " Discord" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+            - generic [ref=e74]: Discord
+          - generic [ref=e75]: "|"
+          - button " 临时聊天" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: 
+            - generic [ref=e78]: 临时聊天
+        - text:     |     |     | 
+      - generic [ref=e79]:
+        - generic [ref=e81]: "#0"
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Assistant
+              - text: 
+            - generic [ref=e87]:                
+            - text:       
+          - text:       
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: 如果您已连接到一个 API，试着问我点什么吧！
+            - separator [ref=e90]
+            - paragraph [ref=e91]:
+              - strong [ref=e92]: 提示：
+              - text: 您可以通过角色设置中的 "更多…" 菜单将角色设为欢迎页面的助手。
+      - generic [ref=e94]:
+        - text:                               
+        - generic [ref=e96]:
+          - button " API 连接" [ref=e97] [cursor=pointer]:
+            - generic [ref=e98]: 
+            - generic [ref=e99]: API 连接
+          - button " 角色管理" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - generic [ref=e102]: 角色管理
+          - button " 扩展程序" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]: 
+            - generic [ref=e105]: 扩展程序
+    - generic [ref=e36]:
+      - text:  
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39] [cursor=pointer]: 
+          - generic "扩展程序" [ref=e108] [cursor=pointer]: 
+        - textbox "输入想发送的消息，或输入 /? 获取帮助" [ref=e109]
+        - generic [ref=e41]:
+          - text:      
+          - generic "发送消息" [ref=e110] [cursor=pointer]: 
+  - text:                       1      
+  - generic [ref=e111]: 
+  - status [ref=e112]
+  - status [ref=e113]
+  - status [ref=e114]
+  - status [ref=e115]
+  - status [ref=e116]
+  - status [ref=e117]
+  - status [ref=e118]
+  - status [ref=e119]
+  - status [ref=e120]
+  - status [ref=e121]
+  - status [ref=e122]
+  - status [ref=e123]

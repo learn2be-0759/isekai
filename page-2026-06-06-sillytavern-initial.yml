@@ -1,0 +1,112 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "" [ref=e48] [cursor=pointer]
+      - text:                                        + No items                         ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☐ ☰ ☐ ☰ ☐ ☰                                  + No items      ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰                  +     No items   X     *    *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *                                              *     *              *     *     *     *     *     *     *     
+    - generic [ref=e9]:
+      - button "" [ref=e49] [cursor=pointer]
+      - text:                                                                       
+    - generic [ref=e12]:
+      - button "" [ref=e50] [cursor=pointer]
+      - text:                                               
+    - generic [ref=e15]:
+      - button "" [ref=e51] [cursor=pointer]
+      - text:                +     
+    - generic [ref=e18]:
+      - button "" [ref=e52] [cursor=pointer]
+      - text:                                   
+    - generic [ref=e21]:
+      - generic "更改背景图片" [ref=e53]:
+        - button "" [ref=e54] [cursor=pointer]
+      - text:       +                            
+    - generic [ref=e24]:
+      - button "" [ref=e55] [cursor=pointer]
+      - text:         +               +                                                                                                                     +   + +  +     +        +        +        +                                      没有找到脚本                                                                                                        没有找到脚本     
+    - generic [ref=e27]:
+      - button "" [ref=e56] [cursor=pointer]
+      - text:                    
+    - generic [ref=e30]:
+      - button "" [ref=e57] [cursor=pointer]
+      - text:                                                     群聊暂无成员。          无可用角色                                
+  - generic:                      +                                                                                +    + +                  
+  - generic:                  
+  - generic [ref=e33]:
+    - text: 
+    - generic [ref=e34]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - img "SillyTavern 徽标" [ref=e60]
+          - generic [ref=e61]: SillyTavern 1.17.0
+          - button "" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+          - text: 
+        - generic [ref=e65]:
+          - button " 文档" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: 
+            - generic [ref=e68]: 文档
+          - button " GitHub" [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - generic [ref=e71]: GitHub
+          - button " Discord" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+            - generic [ref=e74]: Discord
+          - generic [ref=e75]: "|"
+          - button " 临时聊天" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: 
+            - generic [ref=e78]: 临时聊天
+        - text:     |     |     | 
+      - generic [ref=e79]:
+        - generic [ref=e81]: "#0"
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Assistant
+              - text: 
+            - generic [ref=e87]:                
+            - text:       
+          - text:       
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: 如果您已连接到一个 API，试着问我点什么吧！
+            - separator [ref=e90]
+            - paragraph [ref=e91]:
+              - strong [ref=e92]: 提示：
+              - text: 您可以通过角色设置中的 "更多…" 菜单将角色设为欢迎页面的助手。
+      - generic [ref=e94]:
+        - text:                               
+        - generic [ref=e96]:
+          - button " API 连接" [ref=e97] [cursor=pointer]:
+            - generic [ref=e98]: 
+            - generic [ref=e99]: API 连接
+          - button " 角色管理" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - generic [ref=e102]: 角色管理
+          - button " 扩展程序" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]: 
+            - generic [ref=e105]: 扩展程序
+    - generic [ref=e36]:
+      - text:  
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39] [cursor=pointer]: 
+          - generic "扩展程序" [ref=e108] [cursor=pointer]: 
+        - textbox "输入想发送的消息，或输入 /? 获取帮助" [ref=e109]
+        - generic [ref=e41]:
+          - text:      
+          - generic "发送消息" [ref=e110] [cursor=pointer]: 
+  - text:                       1      
+  - generic [ref=e111]: 
+  - status [ref=e112]
+  - status [ref=e113]
+  - status [ref=e114]
+  - status [ref=e115]
+  - status [ref=e116]
+  - status [ref=e117]
+  - status [ref=e118]
+  - status [ref=e119]
+  - status [ref=e120]
+  - status [ref=e121]
+  - status [ref=e122]
+  - status [ref=e123]
+  - status "点击关闭" [ref=e124]:
+    - generic [ref=e125]: 脚本启动
+    - generic [ref=e126]: 数据库自动更新脚本已加载!

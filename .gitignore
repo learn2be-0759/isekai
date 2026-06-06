@@ -1,0 +1,13 @@
+# Playwright MCP browser artifacts
+.playwright-mcp/
+
+# Node modules (if any)
+node_modules/
+
+# Claude internal files
+.claude/memory/
+.claude/scheduled_tasks.json
+
+# OS files
+.DS_Store
+Thumbs.db

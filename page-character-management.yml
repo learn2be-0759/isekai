@@ -1,0 +1,251 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "" [ref=e48] [cursor=pointer]
+      - text:                                        + No items                         ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☑ ☰ ☐ ☰ ☐ ☰ ☐ ☰                                  + No items      ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰  ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰ ☰                  +     No items   X     *    *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *     *                                              *     *              *     *     *     *     *     *     *     
+    - generic [ref=e9]:
+      - button "" [ref=e49] [cursor=pointer]
+      - text:                                                                       
+    - generic [ref=e12]:
+      - button "" [ref=e50] [cursor=pointer]
+      - text:                                               
+    - generic [ref=e15]:
+      - button "" [ref=e51] [cursor=pointer]
+      - text:                +     
+    - generic [ref=e18]:
+      - button "" [ref=e52] [cursor=pointer]
+      - text:                                   
+    - generic [ref=e21]:
+      - generic "更改背景图片" [ref=e53]:
+        - button "" [ref=e54] [cursor=pointer]
+      - text:       +                            
+    - generic [ref=e24]:
+      - button "" [ref=e55] [cursor=pointer]
+      - text:         +               +                                                                                                                     +   + +  +     +        +        +        +                                      没有找到脚本                                                                                                        没有找到脚本     
+    - generic [ref=e27]:
+      - button "" [ref=e56] [cursor=pointer]
+      - text:                    
+    - generic [ref=e30]:
+      - button "" [ref=e57] [cursor=pointer]
+      - navigation [ref=e127]:
+        - text: 
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic "锁定 = 角色管理面板将保持打开状态" [ref=e130]:
+              - generic [ref=e131]:
+                - button "" [ref=e132] [cursor=pointer]
+                - text: 
+            - button "" [ref=e133] [cursor=pointer]
+          - generic [ref=e137]:
+            - generic [ref=e138]: 
+            - text: 收藏角色以将它们添加到快速热切换区
+        - generic [ref=e140]:   
+        - generic [ref=e142]:
+          - text:                                             群聊暂无成员。          无可用角色
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - button "" [ref=e146] [cursor=pointer]
+                - button "" [ref=e147] [cursor=pointer]
+                - button "" [ref=e148] [cursor=pointer]
+                - button "" [ref=e149] [cursor=pointer]
+                - combobox "角色排序顺序" [ref=e150]:
+                  - option "A-Z" [selected]
+                  - option "Z-A"
+                  - option "最新"
+                  - option "最旧"
+                  - option "收藏夹"
+                  - option "最近"
+                  - option "最多聊天"
+                  - option "最少聊天"
+                  - option "最多 Token"
+                  - option "最少 Token"
+                  - option "随机"
+                - button "" [ref=e151] [cursor=pointer]
+              - generic [ref=e153]:
+                - button "" [ref=e154] [cursor=pointer]:
+                  - generic "仅显示收藏" [ref=e155]: 
+                  - text: 
+                - button "" [ref=e156] [cursor=pointer]:
+                  - generic "仅显示群聊" [ref=e157]: 
+                  - text: 
+                - button "" [ref=e158] [cursor=pointer]:
+                  - generic "Show only folders" [ref=e159]: 
+                  - text: 
+                - button "" [ref=e160] [cursor=pointer]:
+                  - generic "管理标签" [ref=e161]: 
+                  - text: 
+                - button "" [ref=e162] [cursor=pointer]:
+                  - generic "显示标签列表" [ref=e163]: 
+                  - text: 
+                - button "" [ref=e164] [cursor=pointer]:
+                  - generic "清除所有过滤器" [ref=e165]: 
+                  - text: 
+                - text: 
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - generic [ref=e168]: 1-9 .. 9
+                - list [ref=e170]:
+                  - listitem [ref=e171]:
+                    - button "«" [ref=e172]
+                  - listitem [ref=e173]:
+                    - button "<" [ref=e174]
+                  - listitem [ref=e175]:
+                    - button ">" [ref=e176]
+                  - listitem [ref=e177]:
+                    - button "»" [ref=e178]
+                - combobox [ref=e180]:
+                  - option "10 / 页"
+                  - option "25 / 页"
+                  - option "50 / 页" [selected]
+                  - option "100 / 页"
+                  - option "250 / 页"
+                  - option "500 / 页"
+                  - option "1000 / 页"
+              - button "" [ref=e181] [cursor=pointer]
+              - button "" [ref=e182] [cursor=pointer]
+              - text:  
+            - list [ref=e184]:
+              - listitem [ref=e185] [cursor=pointer]:
+                - 'generic "[Character] 山间别墅的同居旅行 File: 山间别墅的同居旅行.png" [ref=e186]':
+                  - img "山间别墅的同居旅行" [ref=e187]
+                - generic [ref=e188]:
+                  - generic "[Character] 山间别墅的同居旅行" [ref=e190]: 山间别墅的同居旅行
+                  - text: 
+              - listitem [ref=e191] [cursor=pointer]:
+                - 'generic "[Character] 尸变纪元 v0.4 File: 尸变纪元 v0.4.png" [ref=e192]':
+                  - img "尸变纪元 v0.4" [ref=e193]
+                - generic [ref=e194]:
+                  - generic "[Character] 尸变纪元 v0.4" [ref=e196]: 尸变纪元 v0.4
+                  - text: 
+              - listitem [ref=e197] [cursor=pointer]:
+                - 'generic "[Character] 新都 File: 新都.png" [ref=e198]':
+                  - img "新都" [ref=e199]
+                - generic [ref=e200]:
+                  - generic "[Character] 新都" [ref=e202]: 新都
+                  - text: 
+              - listitem [ref=e203] [cursor=pointer]:
+                - 'generic "[Character] 又纯又绿的穿越之旅 File: 又纯又绿的穿越之旅.png" [ref=e204]':
+                  - img "又纯又绿的穿越之旅" [ref=e205]
+                - generic [ref=e206]:
+                  - generic "[Character] 又纯又绿的穿越之旅" [ref=e208]: 又纯又绿的穿越之旅
+                  - text: 
+              - listitem [ref=e209] [cursor=pointer]:
+                - 'generic "[Character] 与魅魔母女同居 File: 与魅魔母女同居.png" [ref=e210]':
+                  - img "与魅魔母女同居" [ref=e211]
+                - generic [ref=e212]:
+                  - generic [ref=e213]:
+                    - generic "[Character] 与魅魔母女同居" [ref=e214]: 与魅魔母女同居
+                    - generic [ref=e215]: "0.10"
+                  - text: 
+              - listitem [ref=e216] [cursor=pointer]:
+                - 'generic "[Character] 欲望风俗店V1.3.2 - DS纯文字版本 - 继续改良 File: 欲望风俗店V1.3.2 - DS纯文字版本 - 继续改良.png" [ref=e217]':
+                  - img "欲望风俗店V1.3.2 - DS纯文字版本 - 继续改良" [ref=e218]
+                - generic [ref=e219]:
+                  - generic "[Character] 欲望风俗店V1.3.2 - DS纯文字版本 - 继续改良" [ref=e221]: 欲望风俗店V1.3.2 - DS纯文字版本 - 继续改良
+                  - text: 
+              - listitem [ref=e222] [cursor=pointer]:
+                - 'generic "[Character] 最终幻想7:回响 File: 最终幻想7回响.png" [ref=e223]':
+                  - img "最终幻想7:回响" [ref=e224]
+                - generic [ref=e225]:
+                  - generic [ref=e226]:
+                    - generic "[Character] 最终幻想7:回响" [ref=e227]: 最终幻想7:回响
+                    - generic [ref=e228]: "1.0"
+                  - text: 
+              - listitem [ref=e229] [cursor=pointer]:
+                - 'generic "[Character] Seraphina File: default_Seraphina.png" [ref=e230]':
+                  - img "Seraphina" [ref=e231]
+                - generic [ref=e232]:
+                  - generic [ref=e233]:
+                    - generic "[Character] Seraphina" [ref=e234]: Seraphina
+                    - generic [ref=e235]: 1.0.0
+                  - text: 
+                  - generic [ref=e236]: "ST Default Bot contest winner: roleplay bots category"
+                  - button "ST Default" [ref=e238]:
+                    - generic [ref=e239]: ST Default
+                    - text: 
+              - listitem [ref=e240] [cursor=pointer]:
+                - 'generic "[Character] Y魔大陆V0.7 File: Y魔大陆V0.7.png" [ref=e241]':
+                  - img "Y魔大陆V0.7" [ref=e242]
+                - generic [ref=e243]:
+                  - generic "[Character] Y魔大陆V0.7" [ref=e245]: Y魔大陆V0.7
+                  - text: 
+  - generic:                      +                                                                                +    + +                  
+  - generic:                  
+  - generic [ref=e33]:
+    - text: 
+    - generic [ref=e34]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - img "SillyTavern 徽标" [ref=e60]
+          - generic [ref=e61]: SillyTavern 1.17.0
+          - button "" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+          - text: 
+        - generic [ref=e65]:
+          - button " 文档" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: 
+            - generic [ref=e68]: 文档
+          - button " GitHub" [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - generic [ref=e71]: GitHub
+          - button " Discord" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+            - generic [ref=e74]: Discord
+          - generic [ref=e75]: "|"
+          - button " 临时聊天" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: 
+            - generic [ref=e78]: 临时聊天
+        - text:     |     |     | 
+      - generic [ref=e79]:
+        - generic [ref=e81]: "#0"
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Assistant
+              - text: 
+            - generic [ref=e87]:                
+            - text:       
+          - text:       
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: 如果您已连接到一个 API，试着问我点什么吧！
+            - separator [ref=e90]
+            - paragraph [ref=e91]:
+              - strong [ref=e92]: 提示：
+              - text: 您可以通过角色设置中的 "更多…" 菜单将角色设为欢迎页面的助手。
+      - generic [ref=e94]:
+        - text:                               
+        - generic [ref=e96]:
+          - button " API 连接" [ref=e97] [cursor=pointer]:
+            - generic [ref=e98]: 
+            - generic [ref=e99]: API 连接
+          - button " 角色管理" [active] [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - generic [ref=e102]: 角色管理
+          - button " 扩展程序" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]: 
+            - generic [ref=e105]: 扩展程序
+    - generic [ref=e36]:
+      - text:  
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39] [cursor=pointer]: 
+          - generic "扩展程序" [ref=e108] [cursor=pointer]: 
+        - textbox "输入想发送的消息，或输入 /? 获取帮助" [ref=e109]
+        - generic [ref=e41]:
+          - text:      
+          - generic "发送消息" [ref=e110] [cursor=pointer]: 
+  - text:                       1      
+  - generic [ref=e111]: 
+  - status [ref=e112]
+  - status [ref=e113]
+  - status [ref=e114]
+  - status [ref=e115]
+  - status [ref=e116]
+  - status [ref=e117]
+  - status [ref=e118]
+  - status [ref=e119]
+  - status [ref=e120]
+  - status [ref=e121]
+  - status [ref=e122]
+  - status [ref=e123]
