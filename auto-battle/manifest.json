@@ -1,0 +1,12 @@
+{
+    "display_name": "回合制自动战斗",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "learn2be-0759",
+    "version": "1.0.0",
+    "description": "炉石酒馆战棋风格回合制自动战斗扩展，基于艾瑟兰战斗系统",
+    "homePage": "https://github.com/learn2be-0759/isekai"
+}

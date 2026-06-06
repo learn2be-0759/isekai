@@ -1,0 +1,487 @@
+/* ==================== 回合制自动战斗 — 酒馆战棋风格 ==================== */
+
+/* CSS 变量 */
+:root {
+    --ab-bg: #1a1a2e;
+    --ab-panel-bg: #16213e;
+    --ab-border: #0f3460;
+    --ab-accent: #e94560;
+    --ab-gold: #f0a500;
+    --ab-text: #eee;
+    --ab-text-dim: #999;
+    --ab-hp-green: #4caf50;
+    --ab-hp-yellow: #ff9800;
+    --ab-hp-red: #f44336;
+    --ab-my-color: #2196f3;
+    --ab-enemy-color: #e94560;
+    --ab-log-bg: #0d1117;
+}
+
+/* 主面板 */
+.auto-battle-panel {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 720px;
+    max-height: 85vh;
+    background: var(--ab-panel-bg);
+    border: 2px solid var(--ab-border);
+    border-radius: 12px;
+    color: var(--ab-text);
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    z-index: 99999;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* 头部 */
+.ab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    border-bottom: 1px solid var(--ab-border);
+    border-radius: 10px 10px 0 0;
+    cursor: move;
+}
+
+.ab-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.ab-header-btns {
+    display: flex;
+    gap: 6px;
+}
+
+.ab-header-btns button {
+    background: transparent;
+    border: 1px solid var(--ab-border);
+    color: var(--ab-text);
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.ab-header-btns button:hover {
+    background: var(--ab-accent);
+    border-color: var(--ab-accent);
+}
+
+/* 战场 */
+.ab-battlefield {
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    background: linear-gradient(180deg, #0a0a1a 0%, #16213e 100%);
+    min-height: 180px;
+    align-items: flex-start;
+}
+
+.ab-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ab-side-label {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+}
+
+.ab-my-side .ab-side-label {
+    background: rgba(33, 150, 243, 0.2);
+    color: var(--ab-my-color);
+}
+
+.ab-enemy-side .ab-side-label {
+    background: rgba(233, 68, 96, 0.2);
+    color: var(--ab-enemy-color);
+}
+
+.ab-units {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* VS 区域 */
+.ab-vs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    min-width: 120px;
+}
+
+.ab-vs-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--ab-gold);
+    text-shadow: 0 0 10px rgba(240, 165, 0, 0.5);
+    animation: ab-pulse 2s infinite;
+}
+
+@keyframes ab-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+.ab-btn-start, .ab-btn-reset {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.ab-btn-start {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+}
+
+.ab-btn-start:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4);
+}
+
+.ab-btn-reset {
+    background: linear-gradient(135deg, var(--ab-gold), #e65100);
+    color: white;
+}
+
+.ab-btn-reset:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(240, 165, 0, 0.4);
+}
+
+/* 战斗结果 */
+.ab-result {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ab-victory {
+    color: #4caf50;
+    animation: ab-bounce-in 0.5s;
+}
+
+.ab-defeat {
+    color: #f44336;
+    animation: ab-bounce-in 0.5s;
+}
+
+@keyframes ab-bounce-in {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 单位卡片 */
+.ab-unit-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s;
+    position: relative;
+    min-width: 200px;
+}
+
+.ab-unit-icon {
+    font-size: 24px;
+    width: 36px;
+    text-align: center;
+}
+
+.ab-unit-name {
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+.ab-unit-hp-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 60px;
+}
+
+.ab-unit-hp-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease-out, background 0.5s;
+}
+
+.ab-unit-hp-text {
+    font-size: 12px;
+    color: var(--ab-text-dim);
+    min-width: 60px;
+    text-align: right;
+}
+
+.ab-unit-stats {
+    display: flex;
+    gap: 4px;
+    font-size: 11px;
+    color: var(--ab-text-dim);
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.ab-unit-stats span {
+    background: rgba(255,255,255,0.05);
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+/* 攻击动画 */
+.ab-unit-card.ab-attacking {
+    animation: ab-attack-pulse 0.4s;
+    border-color: var(--ab-gold);
+    box-shadow: 0 0 12px rgba(240, 165, 0, 0.6);
+}
+
+.ab-unit-card.ab-missing {
+    animation: ab-miss-flash 0.35s;
+    border-color: #666;
+}
+
+.ab-unit-card.ab-hit {
+    border-color: #f44336;
+    background: rgba(244, 67, 54, 0.15);
+}
+
+.ab-unit-card.ab-missed {
+    border-color: #666;
+    background: rgba(255,255,255,0.02);
+}
+
+.ab-unit-card.ab-shake {
+    animation: ab-shake 0.5s;
+}
+
+.ab-unit-card.ab-dead {
+    opacity: 0.35;
+    filter: grayscale(0.8);
+}
+
+@keyframes ab-attack-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); box-shadow: 0 0 20px rgba(240,165,0,0.8); }
+    100% { transform: scale(1); }
+}
+
+@keyframes ab-miss-flash {
+    0% { border-color: #666; }
+    50% { border-color: #999; }
+    100% { border-color: #666; }
+}
+
+@keyframes ab-shake {
+    0%, 100% { transform: translateX(0); }
+    10% { transform: translateX(-6px); }
+    30% { transform: translateX(6px); }
+    50% { transform: translateX(-4px); }
+    70% { transform: translateX(4px); }
+    90% { transform: translateX(-2px); }
+}
+
+/* 战斗日志 */
+.ab-log-container {
+    border-top: 1px solid var(--ab-border);
+    background: var(--ab-log-bg);
+    max-height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.ab-log-header {
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--ab-text-dim);
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.ab-log {
+    overflow-y: auto;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.ab-log-entry {
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    animation: ab-fade-in 0.3s;
+}
+
+@keyframes ab-fade-in {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.ab-log-system { color: #2196f3; }
+.ab-log-hit { color: #ff9800; }
+.ab-log-miss { color: #666; }
+.ab-log-victory { color: #4caf50; font-size: 14px; font-weight: bold; }
+.ab-log-defeat { color: #f44336; font-size: 14px; font-weight: bold; }
+
+/* 设置面板 */
+.ab-settings {
+    border-top: 1px solid var(--ab-border);
+    background: #0a0a1a;
+    padding: 12px 16px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.ab-settings-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ab-settings-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ab-team-editor h4 {
+    margin: 0 0 6px;
+    font-size: 13px;
+    color: var(--ab-gold);
+}
+
+.ab-unit-editor-row {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.ab-unit-editor-row input {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--ab-text);
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    width: 70px;
+}
+
+.ab-unit-editor-row input.ab-edit-name {
+    width: 100px;
+}
+
+.ab-unit-editor-row input[type="number"] {
+    width: 45px;
+}
+
+.ab-remove-unit {
+    background: transparent;
+    border: 1px solid rgba(244, 67, 54, 0.4);
+    color: #f44336;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ab-remove-unit:hover {
+    background: #f44336;
+    color: white;
+}
+
+.ab-add-unit {
+    background: rgba(76, 175, 80, 0.2);
+    border: 1px dashed #4caf50;
+    color: #4caf50;
+    padding: 4px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.ab-add-unit:hover {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+.ab-btn-save {
+    background: var(--ab-accent);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.ab-btn-save:hover {
+    filter: brightness(1.2);
+}
+
+/* 滚动条 */
+.ab-log::-webkit-scrollbar,
+.ab-settings::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ab-log::-webkit-scrollbar-track,
+.ab-settings::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ab-log::-webkit-scrollbar-thumb,
+.ab-settings::-webkit-scrollbar-thumb {
+    background: var(--ab-border);
+    border-radius: 2px;
+}
+
+/* 死亡单位 */
+.ab-unit-card[data-hp="0"],
+.ab-unit-card.dead {
+    opacity: 0.35;
+    filter: grayscale(0.8);
+}
