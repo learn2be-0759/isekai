@@ -1,5 +1,7 @@
 # Playwright MCP browser artifacts
 .playwright-mcp/
+page-*.yml
+*.png
 
 # Node modules (if any)
 node_modules/
