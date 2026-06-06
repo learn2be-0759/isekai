@@ -3,10 +3,10 @@
  * 基于艾瑟兰战斗系统
  */
 
-import { extension_settings, getContext, renderExtensionTemplateAsync } from '../../extensions.js';
-import { SlashCommandParser } from '../../slash-commands/SlashCommandParser.js';
-import { SlashCommand } from '../../slash-commands/SlashCommand.js';
-import { ARGUMENT_TYPE, SlashCommandArgument } from '../../slash-commands/SlashCommandArgument.js';
+import { extension_settings, getContext } from '../../../extensions.js';
+import { SlashCommandParser } from '../../../slash-commands/SlashCommandParser.js';
+import { SlashCommand } from '../../../slash-commands/SlashCommand.js';
+import { ARGUMENT_TYPE, SlashCommandArgument } from '../../../slash-commands/SlashCommandArgument.js';
 
 // ==================== 战斗引擎 ====================
 
@@ -231,11 +231,12 @@ function createBattlePanel() {
     return battlePanel;
 }
 
-/** 渲染单位卡片 */
+/** 渲染单位卡片（战斗中使用实时状态，否则用设置） */
 function renderUnits() {
-    const settings = getSettings();
-    renderTeamUnits('ab-my-units', settings.myTeam);
-    renderTeamUnits('ab-enemy-units', settings.enemyTeam);
+    const myTeam = (currentBattleState ? currentBattleState.myTeam : getSettings().myTeam);
+    const enemyTeam = (currentBattleState ? currentBattleState.enemyTeam : getSettings().enemyTeam);
+    renderTeamUnits('ab-my-units', myTeam);
+    renderTeamUnits('ab-enemy-units', enemyTeam);
 }
 
 function renderTeamUnits(containerId, team) {
